@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniClinic - Painel de Atendimento Omnichannel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>🏥 OmniClinic | Painel de Atendimento</h1>
+        <div id="agente-info">Agente: **Não Logado**</div>
+    </div>
+
+    <div class="main-container">
+        <p id="system-status">Aguardando tickets...</p>
+
+        <div class="controls">
+            <button onclick="logarAgente()" class="btn-primary">Trocar Agente</button>
+            <button onclick="carregarTickets()" class="btn-success">Atualizar Fila</button>
+        </div>
+
+        <h2>Fila de Tickets Abertos</h2>
+        
+        <div id="ticket-grid">
+            <p>Carregando tickets...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
