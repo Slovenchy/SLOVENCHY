@@ -1,0 +1,153 @@
+/* style.css */
+
+/* --- Variáveis e Reset Básico --- */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --danger-color: #dc3545;
+    --bg-color: #f4f7f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: #333;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+#agente-info strong {
+    color: #ffc107;
+}
+
+/* --- Container Principal e Controles --- */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* --- Botões --- */
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary { background-color: var(--primary-color); }
+.btn-primary:hover { background-color: #0056b3; }
+
+.btn-success { background-color: var(--success-color); }
+.btn-success:hover { background-color: #1e7e34; }
+
+.btn-danger { background-color: var(--danger-color); }
+.btn-danger:hover { background-color: #bd2130; }
+
+/* --- Grid de Tickets --- */
+#ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.ticket-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 15px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ticket-card h4 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 5px;
+}
+
+/* --- Tags e Identificação de Canais --- */
+.channel-tag {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: white;
+}
+
+.channel-WhatsApp { background-color: var(--success-color); }
+.channel-Telegram { background-color: var(--info-color); }
+.channel-WebChat { background-color: var(--primary-color); }
+.channel-Email { background-color: var(--secondary-color); }
+
+/* --- Prioridade (Borda Lateral) --- */
+.priority-Alta { border-left: 5px solid var(--danger-color); }
+.priority-Media { border-left: 5px solid var(--warning-color); }
+.priority-Baixa { border-left: 5px solid var(--success-color); }
+
+/* --- Status do Ticket --- */
+.status {
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+.status-Aberto { color: var(--danger-color); background-color: #f8d7da; }
+.status-Atendimento { color: var(--primary-color); background-color: #eaf6ff; }
+.status-Fechado { color: var(--success-color); background-color: #d4edda; }
+
+.ticket-card button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9em;
+}
+
