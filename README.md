@@ -145,7 +145,7 @@ Contribuições são bem-vindas! Para contribuir com o projeto, siga estes passo
 
 ## Autor
 
-**Slovenchy Merveus**
+**SLOVENCHY MERVEUS**
 
 - Instituição: Unic Beira Rio
 - GitHub: https://github.com/Slovenchy/SLOVENCHY/blob/main/ARTIGO%20_MODELAGEM_SISTEMA_OMNICHANEL.docx
